@@ -1,23 +1,31 @@
 package jom.com.softserve.s5.task4;
 
-class Person {
-	String name;
+import java.util.ArrayList;
+import java.util.List;
 
-	Person(String name) {
-		this.name = name;
-	}
-
-//	DecisionMethod goShopping // Write lambda here 
+@FunctionalInterface
+interface DecisionMethod {
+    boolean decide(String name, int discount);
 }
 
-//Create DecisionMethod interface here
+class Person {
+    String name;
+    DecisionMethod goShopping = (pName, discount) -> pName.equals("product1") && discount > 10;
 
+    Person(String name) {
+        this.name = name;
+    }
+}
 
 class Shop {
-//	public List<DecisionMethod> clients = new ArrayList<>();
+    public List<DecisionMethod> clients = new ArrayList<>();
 
-	public int sale(String product, int percent) {
-		// Write your code here
-		return 0;
-	}
+    public int sale(String product, int percent) {
+        int countOfPeople = 0;
+        for (DecisionMethod client : clients) {
+            boolean decide = client.decide(product, percent);
+            if (decide) countOfPeople++;
+        }
+        return countOfPeople;
+    }
 }
