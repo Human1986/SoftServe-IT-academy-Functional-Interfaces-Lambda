@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="RunManager">
+    <configuration name="Tas4Test" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="s1" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="jom.com.softserve.s5.task4.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="jom.com.softserve.s5.task4" />
+      <option name="MAIN_CLASS_NAME" value="jom.com.softserve.s5.task4.Tas4Test" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="JetRunConfigurationType">
+      <module name="s1" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="KotlinStandaloneScriptRunConfigurationType">
+      <module name="s1" />
+      <option name="filePath" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="JUnit.Tas4Test" />
+      </list>
+    </recent_temporary>
+  </component>
+</project>
